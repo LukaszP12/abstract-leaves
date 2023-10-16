@@ -1,6 +1,6 @@
 package pl.piwowarski;
 
-public class DeciduousTree extends Leaf {
+public class DeciduousTree extends AbstractTree {
 
     public DeciduousTree(int coneDiameterLength, int twigsNum) {
         super(coneDiameterLength, twigsNum, "broad and flat leaves");

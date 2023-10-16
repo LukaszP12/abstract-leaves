@@ -1,6 +1,6 @@
 package pl.piwowarski;
 
-public class ConiferTree extends Leaf{
+public class ConiferTree extends AbstractTree {
 
     public ConiferTree(int coneDiameterLength, int twigsNum) {
         super(coneDiameterLength, twigsNum, "small needle like leaves");

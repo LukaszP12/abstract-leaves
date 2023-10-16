@@ -1,11 +1,11 @@
 package pl.piwowarski;
 
-public abstract class Leaf {
+public abstract class AbstractTree {
     private int coneDiameterLength;
     private int twigsNum;
     private String leaves;
 
-    public Leaf(int coneDiameterLength, int twigsNum, String leaves) {
+    public AbstractTree(int coneDiameterLength, int twigsNum, String leaves) {
         this.coneDiameterLength = coneDiameterLength;
         this.twigsNum = twigsNum;
         this.leaves = leaves;
