@@ -19,7 +19,6 @@ public class ConiferTree extends AbstractTree {
                 super.setTwigsNum(getTwigsNum() + 1);
                 break;
             case WINTER:
-                super.setTwigsNum(getTwigsNum() - 2);
                 break;
             case SPRING:
                 super.setLeaves(getLeaves() + 150);
