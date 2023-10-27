@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * A small tree section, used as a container for tree, a sample implementation of decorator design pattern
  * Mały lisek jako implementacja wzorca decorator
- * **/
+ **/
 
 public class TreeSection extends TreeDecorator {
 
@@ -24,8 +24,8 @@ public class TreeSection extends TreeDecorator {
     }
 
     @Override
-    public void growTheTree(YearPeriod yearPeriod) {
-        super.growTheTree(yearPeriod);
+    public void grow(YearPeriod yearPeriod) {
+        super.grow(yearPeriod);
         trees.stream().forEach(t -> t.grow(yearPeriod));
     }
 }

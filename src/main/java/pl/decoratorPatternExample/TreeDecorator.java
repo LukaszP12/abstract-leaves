@@ -12,7 +12,7 @@ public abstract class TreeDecorator implements Growable {
     }
 
     @Override
-    public void growTheTree(YearPeriod yearPeriod) {
+    public void grow(YearPeriod yearPeriod) {
         tree.grow(yearPeriod);
     }
 }
