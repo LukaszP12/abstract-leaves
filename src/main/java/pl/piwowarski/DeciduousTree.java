@@ -44,7 +44,7 @@ public class DeciduousTree extends AbstractTree {
                 break;
         }
 
-        super.setConeDiameterLength(getConeDiameterLength() + 5);
+        super.setConeDiameterLength(getConeDiameterLength() + 2);
         System.out.println("Have a re-growth period (often during the summer) to develop the foliage" + " our tree is growing through " + yearPeriod);
     }
 

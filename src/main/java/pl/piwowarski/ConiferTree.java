@@ -43,7 +43,7 @@ public class ConiferTree extends AbstractTree {
                 super.setAge(getAge() + 1);
                 break;
         }
-        super.setConeDiameterLength(getConeDiameterLength() + 4);
+        super.setConeDiameterLength(getConeDiameterLength() + 1.5);
         System.out.println("ConiferTrees are evergreen, so they don't re-grow" + " our tree is growing through " + yearPeriod);
     }
 

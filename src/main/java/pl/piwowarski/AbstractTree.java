@@ -1,7 +1,7 @@
 package pl.piwowarski;
 
 public abstract class AbstractTree {
-    private int coneDiameterLength;
+    private double coneDiameterLength;
     private int twigsNum;
     private int leaves;
     private int age;
@@ -17,11 +17,11 @@ public abstract class AbstractTree {
 
     abstract void grow(YearPeriod yearPeriod);
 
-    public int getConeDiameterLength() {
+    public double getConeDiameterLength() {
         return coneDiameterLength;
     }
 
-    public void setConeDiameterLength(int coneDiameterLength) {
+    public void setConeDiameterLength(double coneDiameterLength) {
         this.coneDiameterLength = coneDiameterLength;
     }
 
