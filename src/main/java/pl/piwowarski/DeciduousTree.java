@@ -20,7 +20,7 @@ public class DeciduousTree extends AbstractTree {
      * implements strategy design pattern
      */
     @Override
-    void grow(YearPeriod yearPeriod) {
+    public void grow(YearPeriod yearPeriod) {
         if (getAge() >= getLifeSpan()) {
             System.out.println("our tree" + getClass().getName() + " has reached its life span and will not grow any more");
             return;
@@ -45,7 +45,7 @@ public class DeciduousTree extends AbstractTree {
         }
 
         super.setConeDiameterLength(getConeDiameterLength() + 2);
-        System.out.println("Have a re-growth period (often during the summer) to develop the foliage" + " our tree is growing through " + yearPeriod);
+        System.out.println("Have a re-growth period (often during the summer) to develop the foliage" + " our tree " + "DeciduousTree" + " is growing through " + yearPeriod);
     }
 
     @Override
