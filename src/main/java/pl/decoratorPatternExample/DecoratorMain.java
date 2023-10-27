@@ -12,7 +12,7 @@ public class DecoratorMain {
         treeSection.addTree(new ConiferTree(8, 0, 100, 200));
 
         for (YearPeriod yearPeriod : YearPeriod.values()) {
-            treeSection.grow(yearPeriod);
+            treeSection.growTheTree(yearPeriod);
         }
     }
 

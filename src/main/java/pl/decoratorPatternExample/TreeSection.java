@@ -6,6 +6,11 @@ import pl.piwowarski.YearPeriod;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A small tree section, used as a container for tree, a sample implementation of decorator design pattern
+ * Mały lisek jako implementacja wzorca decorator
+ * **/
+
 public class TreeSection extends TreeDecorator implements Growable {
 
     private List<AbstractTree> trees = new ArrayList<>();
@@ -19,8 +24,8 @@ public class TreeSection extends TreeDecorator implements Growable {
     }
 
     @Override
-    public void grow(YearPeriod yearPeriod) {
-        super.grow(yearPeriod);
+    public void growTheTree(YearPeriod yearPeriod) {
+        super.growTheTree(yearPeriod);
         trees.stream().forEach(t -> t.grow(yearPeriod));
     }
 }

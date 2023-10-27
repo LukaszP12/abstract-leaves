@@ -7,12 +7,12 @@ public abstract class TreeDecorator implements Growable {
 
     private AbstractTree tree;
 
-    public TreeDecorator(AbstractTree groweable) {
-        tree = groweable;
+    public TreeDecorator(AbstractTree tree) {
+        this.tree = tree;
     }
 
     @Override
-    public void grow(YearPeriod yearPeriod) {
+    public void growTheTree(YearPeriod yearPeriod) {
         tree.grow(yearPeriod);
     }
 }
