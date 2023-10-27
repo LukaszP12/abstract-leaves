@@ -7,12 +7,25 @@ package pl.piwowarski;
 
 public class DeciduousTree extends AbstractTree {
 
-    public DeciduousTree(int coneDiameterLength, int twigsNum, int leaves) {
-        super(coneDiameterLength, twigsNum, leaves);
+    public DeciduousTree(int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+        super(0, coneDiameterLength, twigsNum, leaves, lifeSpan);
     }
 
+    public DeciduousTree(int age, int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+        super(age, coneDiameterLength, twigsNum, leaves, lifeSpan);
+    }
+
+    /**
+     * grow method
+     * implements strategy design pattern
+     */
     @Override
     void grow(YearPeriod yearPeriod) {
+        if (getAge() >= getLifeSpan()) {
+            System.out.println("our tree" + getClass().getName() + " has reached its life span and will not grow any more");
+            return;
+        }
+
         switch (yearPeriod) {
             case AUTUMN:
                 super.setLeaves(0);
@@ -27,6 +40,7 @@ public class DeciduousTree extends AbstractTree {
             case SUMMER:
                 super.setLeaves(getLeaves() + 100);
                 super.setTwigsNum(getTwigsNum() + 2);
+                super.setAge(getAge() + 1);
                 break;
         }
 

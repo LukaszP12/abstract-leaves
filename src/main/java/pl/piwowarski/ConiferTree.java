@@ -7,12 +7,25 @@ package pl.piwowarski;
 
 public class ConiferTree extends AbstractTree {
 
-    public ConiferTree(int coneDiameterLength, int twigsNum, int leaves) {
-        super(coneDiameterLength, twigsNum, leaves);
+    public ConiferTree(int age, int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+        super(age, coneDiameterLength, twigsNum, leaves, lifeSpan);
     }
 
+    public ConiferTree(int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+        super(0, coneDiameterLength, twigsNum, leaves, lifeSpan);
+    }
+
+    /**
+     * grow method
+     * implements strategy design pattern
+     */
     @Override
     void grow(YearPeriod yearPeriod) {
+        if (getAge() >= getLifeSpan()) {
+            System.out.println("our tree" + getClass().getName() + " has reached its life span and will not grow any more");
+            return;
+        }
+
         switch (yearPeriod) {
             case AUTUMN:
                 super.setLeaves(getLeaves() + 50);
@@ -27,6 +40,7 @@ public class ConiferTree extends AbstractTree {
             case SUMMER:
                 super.setLeaves(getLeaves() + 100);
                 super.setTwigsNum(getTwigsNum() + 1);
+                super.setAge(getAge() + 1);
                 break;
         }
         super.setConeDiameterLength(getConeDiameterLength() + 4);

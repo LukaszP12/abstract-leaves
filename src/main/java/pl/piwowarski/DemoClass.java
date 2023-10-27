@@ -4,7 +4,7 @@ package pl.piwowarski;
 public class DemoClass {
 
     public static void main(String[] args) {
-        DeciduousTree deciduousTree = new DeciduousTree(5, 10, 120);
+        DeciduousTree deciduousTree = new DeciduousTree(5, 10, 120, 100);
 
         for (YearPeriod yearPeriod : YearPeriod.values()) {
             deciduousTree.grow(yearPeriod);
@@ -12,14 +12,14 @@ public class DemoClass {
 
         System.out.println(deciduousTree);
 
-        ConiferTree coniferTree = new ConiferTree(8, 3, 100);
+        ConiferTree coniferTree = new ConiferTree(8, 3, 100, 200);
         for (YearPeriod yearPeriod : YearPeriod.values()) {
             coniferTree.grow(yearPeriod);
         }
 
         System.out.println(coniferTree);
 
-        ConiferTree coniferTree2 = new ConiferTree(8, 0, 100);
+        ConiferTree coniferTree2 = new ConiferTree(8, 0, 100, 200);
         for (YearPeriod yearPeriod : YearPeriod.values()) {
             coniferTree2.grow(yearPeriod);
         }

@@ -4,11 +4,15 @@ public abstract class AbstractTree {
     private int coneDiameterLength;
     private int twigsNum;
     private int leaves;
+    private int age;
+    private int lifeSpan;
 
-    public AbstractTree(int coneDiameterLength, int twigsNum, int leaves) {
+    public AbstractTree(int age, int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+        this.age = age;
         this.coneDiameterLength = coneDiameterLength;
         this.twigsNum = twigsNum;
         this.leaves = leaves;
+        this.lifeSpan = lifeSpan;
     }
 
     abstract void grow(YearPeriod yearPeriod);
@@ -43,6 +47,22 @@ public abstract class AbstractTree {
             return;
         }
         this.leaves = leaves;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getLifeSpan() {
+        return lifeSpan;
+    }
+
+    public void setLifeSpan(int lifeSpan) {
+        this.lifeSpan = lifeSpan;
     }
 
     @Override
