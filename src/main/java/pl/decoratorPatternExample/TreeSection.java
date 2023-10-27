@@ -11,7 +11,7 @@ import java.util.List;
  * Mały lisek jako implementacja wzorca decorator
  * **/
 
-public class TreeSection extends TreeDecorator implements Growable {
+public class TreeSection extends TreeDecorator {
 
     private List<AbstractTree> trees = new ArrayList<>();
 
