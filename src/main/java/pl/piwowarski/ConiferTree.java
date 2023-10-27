@@ -20,7 +20,7 @@ public class ConiferTree extends AbstractTree {
      * implements strategy design pattern
      */
     @Override
-    void grow(YearPeriod yearPeriod) {
+    public void grow(YearPeriod yearPeriod) {
         if (getAge() >= getLifeSpan()) {
             System.out.println("our tree" + getClass().getName() + " has reached its life span and will not grow any more");
             return;

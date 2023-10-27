@@ -15,7 +15,7 @@ public abstract class AbstractTree {
         this.lifeSpan = lifeSpan;
     }
 
-    abstract void grow(YearPeriod yearPeriod);
+    public abstract void grow(YearPeriod yearPeriod);
 
     public double getConeDiameterLength() {
         return coneDiameterLength;
