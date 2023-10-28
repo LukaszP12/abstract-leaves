@@ -7,11 +7,11 @@ package pl.piwowarski;
 
 public class ConiferTree extends AbstractTree {
 
-    public ConiferTree(int age, int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+    public ConiferTree(int age, double coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
         super(age, coneDiameterLength, twigsNum, leaves, lifeSpan);
     }
 
-    public ConiferTree(int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+    public ConiferTree(double coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
         super(0, coneDiameterLength, twigsNum, leaves, lifeSpan);
     }
 

@@ -7,7 +7,7 @@ public abstract class AbstractTree {
     private int age;
     private int lifeSpan;
 
-    public AbstractTree(int age, int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+    public AbstractTree(int age, double coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
         this.age = age;
         this.coneDiameterLength = coneDiameterLength;
         this.twigsNum = twigsNum;

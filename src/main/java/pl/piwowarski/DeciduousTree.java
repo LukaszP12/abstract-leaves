@@ -7,11 +7,11 @@ package pl.piwowarski;
 
 public class DeciduousTree extends AbstractTree {
 
-    public DeciduousTree(int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+    public DeciduousTree(double coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
         super(0, coneDiameterLength, twigsNum, leaves, lifeSpan);
     }
 
-    public DeciduousTree(int age, int coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
+    public DeciduousTree(int age, double coneDiameterLength, int twigsNum, int leaves, int lifeSpan) {
         super(age, coneDiameterLength, twigsNum, leaves, lifeSpan);
     }
 
