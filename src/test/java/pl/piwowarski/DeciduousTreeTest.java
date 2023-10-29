@@ -21,7 +21,8 @@ public class DeciduousTreeTest {
     @Test
     public void after_two_turns_of_season_tree_grows_by_2_years() {
         // given
-        DeciduousTree deciduousTree = new DeciduousTree(20, 7, 1, 800, 100);
+        int startAge = 20;
+        DeciduousTree deciduousTree = new DeciduousTree(startAge, 7, 1, 800, 100);
         // when
         Arrays.stream(YearPeriod.values()).forEach(yearPeriod -> {
             deciduousTree.grow(yearPeriod);
@@ -31,7 +32,7 @@ public class DeciduousTreeTest {
             deciduousTree.grow(yearPeriod);
         }
         // then
-        Assert.assertEquals(22, deciduousTree.getAge());
+        Assert.assertEquals(startAge + 2, deciduousTree.getAge());
     }
 
     @Test
